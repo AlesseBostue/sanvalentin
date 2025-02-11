@@ -10,7 +10,7 @@ import { RouterLink } from 'vue-router'
     <div class="body-center">
       <img src="@/assets/yay.gif" alt="imagen de una linda rana" class="imagen" />
       <div>
-        <RouterLink to="/" class="btn">Volver :D</RouterLink>
+        <RouterLink to="/" class="btn btn-yes">Volver :D</RouterLink>
       </div>
     </div>
   </div>

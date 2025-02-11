@@ -9,7 +9,7 @@ import { RouterLink } from 'vue-router'
   <div class="body-center">
     <img src="@/assets/Kronii-Loading.gif" alt="imagen de una linda rana" class="imagen" />
     <div>
-      <RouterLink to="Yuppi" class="btn">Volver?</RouterLink>
+      <RouterLink to="Yuppi" class="btn btn-yes">Volver?</RouterLink>
     </div>
   </div>
 </template>

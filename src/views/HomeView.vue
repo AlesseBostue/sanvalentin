@@ -1,3 +1,9 @@
+<script setup>
+import { ref } from 'vue'
+
+const clickCount = ref(0)
+</script>
+
 <template>
   <div class="title-center">
     <h1>Quieres ser mi sanvalentin?</h1>
@@ -5,8 +11,13 @@
   <div class="body-center">
     <img src="@/assets/cute-frog-with-heart.gif" alt="imagen de una linda rana" class="imagen" />
     <div>
-      <button to="/" class="btn btn-no">NO</button>
-      <RouterLink to="/happy" class="btn btn-yes">SI</RouterLink>
+      <button to="/" class="btn btn-no" @click="clickCount++">NO</button>
+      <RouterLink
+        to="/happy"
+        class="btn btn-yes"
+        :style="{ transform: `scale(${1 + clickCount * 0.5})` }"
+        >SI</RouterLink
+      >
     </div>
   </div>
 </template>
@@ -25,6 +36,11 @@
   border-radius: 10px;
   filter: blur(8px);
   transition: opacity 0.3s ease;
+}
+
+.btn-yes {
+  display: inline-block;
+  transition: all 0.3s ease;
 }
 
 .btn-yes::before {
