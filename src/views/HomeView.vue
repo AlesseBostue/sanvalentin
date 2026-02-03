@@ -6,7 +6,7 @@ const clickCount = ref(0)
 
 <template>
   <div class="title-center">
-    <h1>Quieres ser mi sanvalentin?</h1>
+    <h1>Quieres ser mi novia?</h1>
   </div>
   <div class="body-center">
     <img src="@/assets/cute-frog-with-heart.gif" alt="imagen de una linda rana" class="imagen" />
